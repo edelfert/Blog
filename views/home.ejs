@@ -4,5 +4,9 @@
 
 <p> <%= contentOne %> </p>
 
+<h1><% posts.forEach(function(post) { %>
+      <h1> <%=post.title %></h1>
+      <p> <%=post.content %></p>
+    <% }) %> </h1>
 
 <%- include('partials/footer') -%>
